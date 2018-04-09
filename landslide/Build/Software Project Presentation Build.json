@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Landslide",
+"dataUrl": "Software Project Presentation Build.data.unityweb",
+"asmCodeUrl": "Software Project Presentation Build.asm.code.unityweb",
+"asmMemoryUrl": "Software Project Presentation Build.asm.memory.unityweb",
+"asmFrameworkUrl": "Software Project Presentation Build.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
