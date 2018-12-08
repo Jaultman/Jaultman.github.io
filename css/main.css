@@ -1,0 +1,17 @@
+#nav-background {
+    background-color: lightblue;
+}
+
+#nav-item{
+    background-color: rgb(137, 223, 245);
+}
+
+#nav-item:hover{
+    background-color: rgb(176, 230, 243);
+}
+
+a.nav {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
