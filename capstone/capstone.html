@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Capstone</title>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen">
+
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Capstone.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="nav-background"> 
+        <ul class="nav nav-tabs">
+          <li id="nav-item" role="presentation" class="active"><a class="nav" href="../index.html">Home</a></li>
+          <li id="nav-item" role="presentation"><a class="nav" href="../capstone/capstone.html">Capstone</a></li>
+          <li id="nav-item" role="presentation"><a class="nav" href="../landslide/landslide.html">Landslide</a></li>
+          <li id="nav-item" role="presentation" class="active"><a class="nav" href="../talon/talon.html">Future Project</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="webgl-content">
+          <div id="gameContainer" style="width: 640px; height: 600px"></div>
+          <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="title">Capstone</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
