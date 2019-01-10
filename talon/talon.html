@@ -15,7 +15,7 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Talon_0.01.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Talon_0.02.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -28,70 +28,63 @@
           <li id="nav-item" role="presentation"><a class="nav" href="../landslide/landslide.html">Landslide</a></li>
         </ul>
       </div>
-      <div class="row">
-        <h5 class="text-center">Work In Progress. Learning 2D player movement, combat and inventory management. Everything seen here is certain to change.</h5>
-      </div>
-<!--      <div class="row">
+     <div class="row">
         <div class="col-md-12">
           <h1 class="text-center">Work-In-Progress</h1>
           <p>
               This is an extremely early version of a 2D sidescroller. I aim to continue working on 
               it in my spare time to experiment with various game systems and mechanics, and to learn 
-              about game design as a whole. The current goal is to create a simple testing environment 
-              for the player character by the end of the December 2018.
+              about game design as a whole.
           </p>
           <p>
             Note: Player and Item animations are currently low priority and largely incomplete. Any animation seen is strictly for testing.
           </p>
           <h3>Controls</h3>
           <ul>
+            <li>E: Spawn Enemy</li>
             <li>B: inventory</li>
             <li>U: unequip all gear</li>
             <li>Left Click: Attack/Equip Item</li>
             <li>Right Click: Pick up item (yellow squares)</li>
             <li>Spacebar: Jump/Wall Jump</li>
+            
           </ul>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="gameRow">
+        <div id="gameContainer" style="width: 960px; height: 600px;"></div>
+      </div>
+    
+
+    <div class="row">
         <div class="col-md-12">
-            <h3>
-              Current Goals:
-            </h3>
-            <ul>
-              <li>Character Controls
-                <ul>
-                  <li>Intuitive moveset</li>
-                  <li>3-step attack combo</li>
-                  <li>Feels good to control</li>
-                </ul>
-              </li>
-              <li>Simple enemy which moves toward the player, and attacks when within range</li>
-              <li>Testing level</li>
-            </ul>
-            <!-- WIP, really loose goals
-            <h3>Long-Term Goals:</h3>
-            <ul>
-              <li>Grappling hook mechanic for player character</li>
-              <li>Artwork</li>
-              <li>Sound Design</li>
-              <li>Level Design</li>
-            </ul>
-           
-          </div>
-        </div> -->
-          <div class="row">
-        <div class="webgl-content" style="border:1px solid black;">
-          <div id="gameContainer" style="width: 960px; height: 600px"></div>
-          <div class="footer">
-            <div class="webgl-logo"></div>
-            <div class="title">Capstone</div>
-          </div>
+          <h3>
+            Current Goals:
+          </h3>
+          <ul>
+            <li>Character Controls
+              <ul>
+                <li>Intuitive moveset</li>
+                <li>3-step attack combo</li>
+                <li>Feels good to control</li>
+              </ul>
+            </li>
+            <li>Simple enemy which moves toward the player, and attacks when within range</li>
+            <li>Testing level</li>
+          </ul>
+          <!-- WIP, really loose goals
+          <h3>Long-Term Goals:</h3>
+          <ul>
+            <li>Grappling hook mechanic for player character</li>
+            <li>Artwork</li>
+            <li>Sound Design</li>
+            <li>Level Design</li>
+          </ul>
+          -->
         </div>
       </div>
     </div>
-
 <!--    <div class="container">
       <div class="footer page-footer text-center">
         <div class="row">
