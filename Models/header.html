@@ -1,0 +1,56 @@
+<!--- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+    <!-- LOGO <a class="navbar-brand" style="font-family:Segoe; font-weight: 800; font-size: 230%; " >MDT</a> -->
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+                 <a class="fa fa-linkedin-square" style="font-size:250%" href="https://www.linkedin.com/in/jared-aultman-863b27178/"></a>
+             </li>
+             <li class="nav-item">
+                 <a class="fa fa-github" style="font-size: 250%" href="https://www.jaultman.github.io"></a>
+             </li>
+             <!--<li class="nav-item">
+                 <a class="glyphicon glyphicon-pencil" style="font-size: 150%;color:rgb(0,119,181); margin-right:10px;" href="RESUME LINK">Resume </a>
+             </li>-->
+                 <li class="nav-item active">
+                         <a class="nav-link" href="#top" onClick="home();">Home<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link" href="#about">About Me</a>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link" href="#projects">Projects</a>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link" href="#skills">Skills</a>
+                     </li>
+                     <li class="nav-item ">
+                         <a class="nav-link" href="#contact">Contact</a>
+                     </li>
+         
+         </ul>        
+     </div>
+ </nav>
+
+ <script>
+     $(document).ready(function () {
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        console.log( page );
+
+     });
+
+     function home(){
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        console.log( page );
+        if ( page.length != 0) {
+            // Temp: If page.length is greater than zero, we're not on the home page
+            // TODO: Change to proper URL before posting
+            window.location = "https://jaultman.github.io/";
+        }
+     };
+ </script>

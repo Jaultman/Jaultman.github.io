@@ -24,3 +24,70 @@ a.nav {
     margin:auto;
 }
 
+/* Custom Navbar Styles */
+@media (min-width: 768px){
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0;
+        display: inline;
+    }
+}
+
+.navbar-toggler {
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .navbar-nav {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item{
+        padding: 0;
+    }
+}
+
+/* Michelle's Page Styles */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+}
+
+.navbar-nav>li {
+    padding-right: 20px;
+}
+
+.responsive {
+    width: 20%;
+    height: auto;
+}
+
+.jumbotron {
+    font-family: Playfair;
+    background-image: url("images/Background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-fluid {
+    padding: 10px 50px 10px 50px;
+}
+
+.logo {
+    color: rgb(252, 170, 98);
+    font-size: 50px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}

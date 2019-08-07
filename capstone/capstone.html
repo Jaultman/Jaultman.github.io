@@ -5,11 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Capstone</title>
 
-    <script src="../js/jquery-3.3.1.min.js"></script>
-		<script src="../js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen">
-
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
@@ -17,17 +12,29 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Capstone.json", {onProgress: UnityProgress});
     </script>
+
+    <!-- New Includes -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <script src="../js/jQuery-3.4.1.min.js"></script>
+    <script src="../js/popper-1.14.7.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Downloaded Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-4.3.1.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap-3.4.0.css"/> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/aos.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
   </head>
   <body>
     <div class="container">
-      <div class="row" id="nav-background"> 
-        <ul class="nav nav-tabs">
-          <li id="nav-item" role="presentation" class="active"><a class="nav" href="../index.html">Home</a></li>
-          <li id="nav-item" role="presentation" class="active"><a class="nav" href="../talon/talon.html">Future Project</a></li>
-          <li id="nav-item" role="presentation"><a class="nav" href="../capstone/capstone.html">Capstone</a></li>
-          <li id="nav-item" role="presentation"><a class="nav" href="../landslide/landslide.html">Landslide</a></li>
-        </ul>
-      </div>
+        <div id="header"></div>
 
       <div class="row">
           <div class="col-md-12">
@@ -41,6 +48,37 @@
         </div>
       </div>
 
+      <div id="footer"></div>
+
     </div>
   </body>
 </html>
+
+<!--jQuery to add smooth scrolling-->
+<script type="text/javascript">
+
+  $(document).ready(function () {
+      $( "#header" ).load( "../models/header.html" );
+      $( "#footer" ).load( "../models/footer.html" );
+
+      //Smooth scrolling to all links in navbar
+      $(".navbar a").on('click',function(event){
+          if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+
+              //Implement smooth scrolling
+              $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+              }, 900, function () {
+                  window.location.hash = hash;
+              });
+          }
+          
+      })
+
+  });
+
+  AOS.init();
+
+</script>
