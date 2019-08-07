@@ -10,7 +10,7 @@
                  <a class="fa fa-linkedin-square" style="font-size:250%" href="https://www.linkedin.com/in/jared-aultman-863b27178/"></a>
              </li>
              <li class="nav-item">
-                 <a class="fa fa-github" style="font-size: 250%" href="https://www.jaultman.github.io"></a>
+                 <a class="fa fa-github" style="font-size: 250%" href="https://github.com/jaultman"></a>
              </li>
              <!--<li class="nav-item">
                  <a class="glyphicon glyphicon-pencil" style="font-size: 150%;color:rgb(0,119,181); margin-right:10px;" href="RESUME LINK">Resume </a>
@@ -41,7 +41,26 @@
         var page = path.split("/").pop();
         console.log( page );
 
+
+
      });
+
+         //Smooth scrolling to all links in navbar
+    $(".navbar a").on('click',function(event){
+        console.log("TEST1");
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                //Implement smooth scrolling
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+                    window.location.hash = hash;
+                });
+            }
+            
+        })
 
      function home(){
         var path = window.location.pathname;
