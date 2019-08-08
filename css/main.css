@@ -53,6 +53,32 @@ a.nav {
     }
 }
 
+div.panel-heading{
+    background-color: #d5dcdb;
+}
+
+.display-4 {
+    background-color: #eeeeee;
+}
+
+.project-img{
+    border-radius: 25px;
+    border: 3px solid #eeeeee;
+    max-width: initial;
+}
+
+.side-crop{
+    max-width: 100%; overflow: hidden;
+    border-radius: 25px;
+    text-align: left;
+}
+
+.project-description{
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+}
+
 /* Michelle's Page Styles */
 .navbar {
     margin-bottom: 0;

@@ -1,3 +1,6 @@
+<!-- The original page used as a template for this one was created by Michelle Domagala-Tang! -->
+<!-- Resources from w3schools.com and getbootstrap.com were used to help make this website -->
+
 <!--- Navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
     <!-- LOGO <a class="navbar-brand" style="font-family:Segoe; font-weight: 800; font-size: 230%; " >MDT</a> -->
@@ -6,31 +9,26 @@
      </button>
      <div class="collapse navbar-collapse" id="navbarNav">
          <ul class="navbar-nav mr-auto">
-             <li class="nav-item">
-                 <a class="fa fa-linkedin-square" style="font-size:250%" href="https://www.linkedin.com/in/jared-aultman-863b27178/"></a>
-             </li>
-             <li class="nav-item">
-                 <a class="fa fa-github" style="font-size: 250%" href="https://github.com/jaultman"></a>
-             </li>
              <!--<li class="nav-item">
                  <a class="glyphicon glyphicon-pencil" style="font-size: 150%;color:rgb(0,119,181); margin-right:10px;" href="RESUME LINK">Resume </a>
              </li>-->
                  <li class="nav-item active">
-                         <a class="nav-link" href="#top" onClick="home();">Home<span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item ">
-                         <a class="nav-link" href="#about">About Me</a>
-                     </li>
-                     <li class="nav-item ">
-                         <a class="nav-link" href="#projects">Projects</a>
-                     </li>
-                     <li class="nav-item ">
-                         <a class="nav-link" href="#skills">Skills</a>
-                     </li>
-                     <li class="nav-item ">
-                         <a class="nav-link" href="#contact">Contact</a>
-                     </li>
-         
+                    <a class="nav-link" href="#top" onClick="home();">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="landslide/landslide.html">Landslide</a>
+                          <a class="dropdown-item" href="capstone/capstone.html">Capstone</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="talon/talon.html">Talon</a>
+                        </div>
+                      </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
          </ul>        
      </div>
  </nav>
@@ -40,8 +38,6 @@
         var path = window.location.pathname;
         var page = path.split("/").pop();
         console.log( page );
-
-
 
      });
 
